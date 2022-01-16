@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "package.json-update" : "node merge.js package.base.json package.self.json package.json",
+    "tsconfig-update" : "node copy.js tsconfig.base.json tsconfig.json",
+    "tslint-update" : "node copy.js tslint.base.json tslint.json",
+    "tsconfig-spec-update" : "node copy.js tsconfig-spec.base.json tsconfig-spec.json",
+    "bootstrap" : "lerna bootstrap",
+    "link" : "lerna link",
+    "spec-run": "lerna exec  -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
+    "compile" : "lerna run compile --stream --parallel",
+    "compile-watch" : "lerna run compile-watch --stream --parallel",
+    "spec-compile-watch" : "lerna run spec-compile-watch --stream --parallel",
+
+    "lint": "lerna run lint --stream --parallel",
+    "lint-fix": "lerna run lint-fix --stream --parallel",
+
+    "spec-compile" : "lerna run spec-compile",
+    "aaa": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
+    "build-watch": "tsc -b -w",
+    "build-spec": "tsc -b tsconfig-spec.json",
+    "build:esm": "lerna exec --stream --parallel -- ../../node_modules/.bin/tsc --outDir lib/esm --module esnext --target esnext",
+    "build:clean": "rm -rf ./packages/*/lib && yarn build"
+
+  },
+  "devDependencies": {
+    "deepmerge" : "^4.2.2",
+    "@types/jasmine": "^3.10.2",
+    "jasmine": "^3.10.0",
+    "lerna": "^3.13.0",
+    "tslint": "^5.13.0",
+    "typescript": "^4.4.4",
+    "glob": "^7.2.0"
+  }
+}
