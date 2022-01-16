@@ -8,6 +8,7 @@
     "package.json-update" : "node merge.js package.base.json package.self.json package.json",
     "tsconfig-update" : "node copy.js tsconfig.base.json tsconfig.json",
     "tslint-update" : "node copy.js tslint.base.json tslint.json",
+    "print-versions" : "node all-version.js",
     "license-update" : "node copy.js LICENSE LICENSE",
     "tsconfig-spec-update" : "node copy.js tsconfig-spec.base.json tsconfig-spec.json",
     "bootstrap" : "lerna bootstrap",

@@ -1,6 +1,8 @@
 const merge = require('deepmerge');
 const fs = require('fs');
 const glob = require('glob');
+const Loader = require('./loader');
+
 
 const [source, destination] = process.argv.slice(2);
 
@@ -10,31 +12,20 @@ if(!source || !destination) {
 }
 
 
-const folders = loadJson(__dirname + '/package.json').workspaces;
+Loader.PackageDirectories().then(directories=>{
 
-for(const folder of folders) {
+  for(const match of directories) {
 
-  glob(__dirname + `/${folder}/`, (err, matches) => {
+    fs.copyFile(__dirname + `/${source}`, match + `/${destination}`, function(error) {
 
-    for(const match of matches) {
+      if(error) {
 
-        fs.copyFile(__dirname + `/${source}`, match + `/${destination}`, function(error) {
+        console.error(error);
+      }
 
-          if(error) {
-
-            console.error(error);
-          }
-
-        });
-    }
-  });
-}
-
-function loadJson(path) {
-
-  return JSON.parse(fs.readFileSync(path));
-}
-
+    });
+  }
+});
 
 
 
