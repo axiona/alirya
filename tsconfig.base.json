@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration" : true,
     "strictNullChecks": true,
+    "experimentalDecorators": true,
     "incremental": true,
     "tsBuildInfoFile": "./dist/compiler-cache",
     "strictPropertyInitialization": true,
