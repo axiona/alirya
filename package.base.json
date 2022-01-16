@@ -48,7 +48,9 @@
   "publishConfig": {
     "directory": "dist"
   },
-  "author": "Andika Candra",
+  "author": {
+    "name": "Andika Candra"
+  },
   "private": true,
   "license": "MIT"
 }
