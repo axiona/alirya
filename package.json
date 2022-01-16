@@ -4,10 +4,11 @@
     "packages/*"
   ],
   "scripts": {
-    "config-update" : "npm-run-all --parallel package.json-update tsconfig-update tslint-update tsconfig-spec-update",
+    "config-update" : "npm-run-all --parallel package.json-update tsconfig-update tslint-update tsconfig-spec-update license-update",
     "package.json-update" : "node merge.js package.base.json package.self.json package.json",
     "tsconfig-update" : "node copy.js tsconfig.base.json tsconfig.json",
     "tslint-update" : "node copy.js tslint.base.json tslint.json",
+    "license-update" : "node copy.js LICENSE LICENSE",
     "tsconfig-spec-update" : "node copy.js tsconfig-spec.base.json tsconfig-spec.json",
     "bootstrap" : "lerna bootstrap",
     "link" : "lerna link",
@@ -36,5 +37,6 @@
     "tslint": "^5.13.0",
     "typescript": "^4.4.4",
     "glob": "^7.2.0"
-  }
+  },
+  "license": "Apache-2.0"
 }
