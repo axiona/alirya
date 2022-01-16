@@ -8,6 +8,7 @@
     "target": "es2015",
     "outDir": "dist",
     "sourceMap": true,
+    "declarationMap": true,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration" : true,
     "strictNullChecks": true,

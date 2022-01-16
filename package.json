@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "config-update" : "npm-run-all --parallel package.json-update tsconfig-update tslint-update tsconfig-spec-update",
     "package.json-update" : "node merge.js package.base.json package.self.json package.json",
     "tsconfig-update" : "node copy.js tsconfig.base.json tsconfig.json",
     "tslint-update" : "node copy.js tslint.base.json tslint.json",

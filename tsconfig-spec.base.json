@@ -6,6 +6,7 @@
     "declaration": true,
     "target": "es2016",
     "outDir": "dist-spec",
+    "declarationMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
