@@ -22,7 +22,11 @@ Loader.PackageDirectories().then(directories=>{
 
     const data = merge(parentData, childData);
 
-    fs.writeFileSync(match + `/${destination}`, JSON.stringify(data, null, 2), {encoding:"utf8"});
+    fs.writeFileSync(
+      match + `/${destination}`,
+      JSON.stringify(data, null, 2).trim(),
+      {encoding:"utf8"}
+    );
   }
 });
 
