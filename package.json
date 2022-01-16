@@ -15,6 +15,7 @@
     "compile" : "lerna run compile --stream --parallel",
     "compile-watch" : "lerna run compile-watch --stream --parallel",
     "spec-compile-watch" : "lerna run spec-compile-watch --stream --parallel",
+    "doc-generate" : "lerna run doc-generate --stream --parallel",
 
     "lint": "lerna run lint --stream --parallel",
     "lint-fix": "lerna run lint-fix --stream --parallel",

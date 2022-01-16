@@ -16,7 +16,8 @@
     "rimraf": "^3.0.2",
     "ts-cleaner": "^1.0.5",
     "typescript": "^4.5.2",
-    "tslint": "^5.13.0"
+    "tslint": "^5.13.0",
+    "typedoc": "^0.22.10"
   },
   "scripts": {
     "spec-run-js": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json",
@@ -36,6 +37,7 @@
     "postpublish": "rimraf package.json package-lock.json LICENSE Readme.md .npmignore",
     "lint": "tslint --project ./tslint.json",
     "lint-fix": "tslint --project ./tslint.json --fix",
+    "doc-generate": "npm-run-all _doc-clean _doc-generate",
     "_compile-script": "tsc",
     "_spec-ensure-directory": "mkdirp dist-spec",
     "_compile-script-watch": "tsc -w",
@@ -43,7 +45,9 @@
     "_spec-compile-watch-script": "tsc -w -p tsconfig-spec.json",
     "_compile-ensure-directory": "mkdirp dist",
     "_release_copy-meta-files": "cpy package.json package-lock.json LICENSE Readme.md .npmignore dist",
-    "_release-remove-compile-cache": "rimraf ./dist/compiler-cache"
+    "_release-remove-compile-cache": "rimraf ./dist/compiler-cache",
+    "_doc-generate": "typedoc --entryPointStrategy expand ./src --out docs",
+    "_doc-clean": "rimraf docs"
   },
   "publishConfig": {
     "directory": "dist"
