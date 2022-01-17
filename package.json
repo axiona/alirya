@@ -16,6 +16,7 @@
     "spec-run": "lerna exec  -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
     "compile" : "lerna run compile --stream --parallel",
     "compile-watch" : "lerna run compile-watch --stream --parallel",
+    "compile-watch/value" : "lerna run compile-watch --stream --scope @alirya/value",
     "spec-compile-watch" : "lerna run spec-compile-watch --stream --parallel",
     "doc-generate" : "lerna run doc-generate --stream --parallel",
 
