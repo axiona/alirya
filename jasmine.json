@@ -4,5 +4,6 @@
     "**/*.spec.js"
   ],
   "stopSpecOnExpectationFailure": false,
-  "random": false
+  "random": false,
+  "verboseDeprecations" : true
 }
