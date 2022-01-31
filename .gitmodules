@@ -1,0 +1,72 @@
+[submodule "packages/array"]
+	path = packages/array
+	url = https://github.com/alirya/array.git
+[submodule "packages/string"]
+	path = packages/string
+	url = https://github.com/alirya/string.git
+[submodule "packages/boolean"]
+	path = packages/boolean
+	url = https://github.com/alirya/boolean.git
+[submodule "packages/class"]
+	path = packages/class
+	url = https://github.com/alirya/class.git
+[submodule "packages/code"]
+	path = packages/code
+	url = https://github.com/alirya/code.git
+[submodule "packages/date"]
+	path = packages/date
+	url = https://github.com/alirya/date.git
+[submodule "packages/enum"]
+	path = packages/enum
+	url = https://github.com/alirya/enum.git
+[submodule "packages/function"]
+	path = packages/function
+	url = https://github.com/alirya/function.git
+[submodule "packages/http"]
+	path = packages/http
+	url = https://github.com/alirya/http.git
+[submodule "packages/iterable"]
+	path = packages/iterable
+	url = https://github.com/alirya/iterable.git
+[submodule "packages/koa"]
+	path = packages/koa
+	url = https://github.com/alirya/koa.git
+[submodule "packages/map"]
+	path = packages/map
+	url = https://github.com/alirya/map.git
+[submodule "packages/message"]
+	path = packages/message
+	url = https://github.com/alirya/message.git
+[submodule "packages/null"]
+	path = packages/null
+	url = https://github.com/alirya/null.git
+[submodule "packages/number"]
+	path = packages/number
+	url = https://github.com/alirya/number.git
+[submodule "packages/object"]
+	path = packages/object
+	url = https://github.com/alirya/object.git
+[submodule "packages/set"]
+	path = packages/set
+	url = https://github.com/alirya/set.git
+[submodule "packages/syslog"]
+	path = packages/syslog
+	url = https://github.com/alirya/syslog.git
+[submodule "packages/type"]
+	path = packages/type
+	url = https://github.com/alirya/type.git
+[submodule "packages/undefined"]
+	path = packages/undefined
+	url = https://github.com/alirya/undefined.git
+[submodule "packages/uri"]
+	path = packages/uri
+	url = https://github.com/alirya/uri.git
+[submodule "packages/validatable"]
+	path = packages/validatable
+	url = https://github.com/alirya/validatable.git
+[submodule "packages/validator"]
+	path = packages/validator
+	url = https://github.com/alirya/validator.git
+[submodule "packages/value"]
+	path = packages/value
+	url = https://github.com/alirya/value.git
