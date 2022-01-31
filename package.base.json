@@ -8,7 +8,7 @@
     "@types/jasmine": "^3.10.2",
     "cpy-cli": "^3.1.1",
     "esm": "^3.2.25",
-    "jasmine": "^3.10.0",
+    "jasmine": "=3.10.0",
     "jasmine-ts-console-reporter": "^3.1.1",
     "json-properties-remover": "^0.1.2",
     "mkdirp": "^1.0.4",
