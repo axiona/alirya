@@ -2,7 +2,7 @@ const glob = require('glob');
 const fs = require('fs');
 
 
-const folders = LoadJson(__dirname + '/package.json').workspaces;
+const folders = LoadJson(__dirname + '/lerna.json').packages;
 
 function LoadJson(path) {
 
