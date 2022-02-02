@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "deepmerge": "^4.2.2",
-    "lerna": "^3.13.0",
+    "lerna": "^4.0.0",
     "tslint": "^5.13.0",
     "typescript": "^4.4.4",
     "glob": "^7.2.0",
