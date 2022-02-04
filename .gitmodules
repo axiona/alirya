@@ -70,3 +70,6 @@
 [submodule "packages/value"]
 	path = packages/value
 	url = https://github.com/alirya/value.git
+[submodule "packages/proxy"]
+	path = packages/proxy
+	url = https://github.com/alirya/proxy.git
