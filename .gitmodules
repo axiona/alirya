@@ -72,4 +72,4 @@
 	url = https://github.com/alirya/value.git
 [submodule "packages/proxy"]
 	path = packages/proxy
-	url = https://github.com/alirya/proxy.git
+	url = https://github.com/alirya/proxy
