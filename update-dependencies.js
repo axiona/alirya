@@ -36,18 +36,26 @@ Loader.PackageDirectories().then(directories=>{
             if(object.dependencies && object.dependencies[name]) {
 
                 object.dependencies[name] = version;
+
+                if(object.dependencies[name] !== version) {
+
+                    console.log(`${object.name}.dependency ${name} ${object.dependencies[name]} -> ${version}`)
+                }
             }
 
             if(object.devDependencies && object.devDependencies[name]) {
 
                 object.devDependencies[name] = version;
+
+                if(object.devDependencies[name] !== version) {
+
+                    console.log(`${object.name}.devDependencies ${name} ${object.devDependencies[name]} -> ${version}`)
+                }
             }
         }
     }
 
     for(const {object, path} of packages) {
-
-        console.log(object);
 
         fs.writeFileSync(
             path,
