@@ -19,6 +19,8 @@
     "spec-compile-watch": "lerna run spec-compile-watch --stream --parallel",
     "spec-compile-watch-scope": "lerna run spec-compile-watch --stream --scope @alirya/score",
     "doc-generate": "lerna run doc-generate --stream --parallel",
+    "git-tag": "lerna run git-tag --no-bail",
+    "git-tag-push": "lerna run git-tag-push --no-bail",
     "lint": "lerna run lint --stream --parallel",
     "lint-fix": "lerna run lint-fix --stream --parallel",
     "spec-compile": "lerna run spec-compile",
