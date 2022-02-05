@@ -20,7 +20,8 @@
     "typedoc": "^0.22.10",
     "tsc-fancy": "^1.1.2",
     "ts-toolbelt": "^9.6.0",
-    "utility-types": "^3.10.0"
+    "utility-types": "^3.10.0",
+    "package-version-git-tag": "^3.0.0"
   },
   "scripts": {
     "spec-run-js": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json",
@@ -42,6 +43,8 @@
     "lint": "tslint --project ./tslint.json",
     "lint-fix": "tslint --project ./tslint.json --fix",
     "doc-generate": "npm-run-all _doc-clean _doc-generate",
+    "git-tag": "package-version-git-tag",
+    "git-tag-push": "package-version-git-tag --push",
     "_compile-script": "tsc-fancy --preserveConsoleOutput",
     "_spec-ensure-directory": "mkdirp dist-spec",
     "_compile-script-watch": "tsc-fancy --preserveConsoleOutput -w",
