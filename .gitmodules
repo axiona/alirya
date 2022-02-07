@@ -76,3 +76,6 @@
 [submodule "packages/score"]
 	path = packages/score
 	url = https://github.com/alirya/score
+[submodule "typeorm"]
+	path = typeorm
+	url = https://github.com/alirya/typeorm
