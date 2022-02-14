@@ -39,7 +39,7 @@ Loader.PackageDirectories().then(directories=>{
 
                 if(object.dependencies[name] !== version) {
 
-                    console.log(`${object.name}.dependency ${name} ${object.dependencies[name]} -> ${version}`)
+                    console.log(`${object.name}.dependency ${name} ${object.dependencies[name]} -> ^${version}`)
                 }
             }
 
@@ -49,7 +49,7 @@ Loader.PackageDirectories().then(directories=>{
 
                 if(object.devDependencies[name] !== version) {
 
-                    console.log(`${object.name}.devDependencies ${name} ${object.devDependencies[name]} -> ${version}`)
+                    console.log(`${object.name}.devDependencies ${name} ${object.devDependencies[name]} -> ^${version}`)
                 }
             }
         }
