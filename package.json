@@ -1,10 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "installs": "npm-run-all --serial bootstrap link",
+    "bootlink": "npm-run-all --serial bootstrap link",
     "config-update": "npm-run-all --parallel _package.json-update _tsconfig-update _tslint-update _tsconfig-spec-update _license-update _jasmine-update _jasmine-debug-update",
     "print-versions": "node all-version.js",
     "bootstrap": "lerna bootstrap",
+    "bootstrap-scope": "lerna bootstrap --scope @alirya/iterable",
+    "installs": "lerna exec  -- npm install",
     "link": "lerna link",
     "spec-run": "lerna exec -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
     "spec-run-debug": "lerna exec -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine-debug.json --reporter=jasmine-ts-console-reporter",
@@ -41,7 +43,7 @@
   },
   "devDependencies": {
     "deepmerge": "^4.2.2",
-    "lerna": "=3.22.1",
+    "lerna": "^3.22.1",
     "tslint": "^5.13.0",
     "typescript": "^4.4.4",
     "glob": "^7.2.0",
