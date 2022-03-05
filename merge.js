@@ -24,7 +24,7 @@ Loader.PackageDirectories().then(directories=>{
 
     fs.writeFileSync(
       match + `/${destination}`,
-      JSON.stringify(data, null, 2).trim(),
+      JSON.stringify(data, null, 2).trim() + '\r\n',
       {encoding:"utf8"}
     );
   }
