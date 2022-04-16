@@ -79,3 +79,6 @@
 [submodule "typeorm"]
 	path = typeorm
 	url = https://github.com/alirya/typeorm
+[submodule "event"]
+	path = event
+	url = https://github.com/alirya/event
