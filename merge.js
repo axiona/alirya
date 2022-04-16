@@ -20,7 +20,7 @@ Loader.PackageDirectories().then(directories=>{
 
     const childData = Loader.LoadJson(match + `/${child}`);
 
-    const data = merge(parentData, childData);
+    const data = merge(childData, parentData);
 
     fs.writeFileSync(
       match + `/${destination}`,

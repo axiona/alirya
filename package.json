@@ -33,7 +33,7 @@
     "ensure-dist": "lerna exec mkdirp dist",
     "update-cross-dependency": "npm-run-all _update-cross-dependency _package.json-update",
     "_update-cross-dependency": "node update-dependencies.js",
-    "_package.json-update": "node merge.js package.base.json package.self.json package.json",
+    "_package.json-update": "node merge.js package.base.json package.json package.json",
     "_tsconfig-update": "node copy.js tsconfig.base.json tsconfig.json",
     "_jasmine-update": "node copy.js jasmine.json jasmine.json",
     "_jasmine-debug-update": "node copy.js jasmine-debug.json jasmine-debug.json",
