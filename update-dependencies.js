@@ -14,7 +14,7 @@ Loader.PackageDirectories().then(directories=>{
 
     for(const match of directories) {
 
-        const path = match + `/package.self.json`;
+        const path = match + `/package.json`;
 
         const data = {
             object : Loader.LoadJson(path),
