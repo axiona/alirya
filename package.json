@@ -42,7 +42,7 @@
     "_update-peer-dependency": " node -r esm update-peer-dependency.js"
   },
   "devDependencies": {
-    "@alirya/monorepo": "^0.1.0",
+    "@alirya/monorepo": "^0.2.0",
     "deepmerge": "^4.2.2",
     "lerna": "^3.22.1",
     "tslint": "^5.13.0",
