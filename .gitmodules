@@ -82,3 +82,6 @@
 [submodule "packages/typeorm"]
 	path = packages/typeorm
 	url = https://github.com/alirya/typeorm
+[submodule "packages/monorepo"]
+	path = packages/monorepo
+	url = https://github.com/alirya/monorepo

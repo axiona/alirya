@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "bootlink": "npm-run-all --serial bootstrap link",
-    "config-update": "npm-run-all --parallel _package.json-update _tsconfig-update _tslint-update _tsconfig-spec-update _license-update _jasmine-update _jasmine-debug-update",
+    "config-update": "npm-run-all --serial _package-update _tsconfig-update _tslint-update _tsconfig-spec-update _license-update _jasmine-update _jasmine-debug-update",
     "print-versions": "node all-version.js",
     "bootstrap": "lerna bootstrap",
     "bootstrap-scope": "lerna bootstrap --scope @alirya/iterable",
@@ -31,17 +31,18 @@
     "build:esm": "lerna exec --stream --parallel -- ../../node_modules/.bin/tsc --outDir lib/esm --module esnext --target esnext",
     "build:clean": "rm -rf ./packages/*/lib && yarn build",
     "ensure-dist": "lerna exec mkdirp dist",
-    "update-cross-dependency": "npm-run-all _update-cross-dependency _package.json-update",
-    "_update-cross-dependency": "node update-dependencies.js",
-    "_package.json-update": "node merge.js package.base.json package.json package.json",
-    "_tsconfig-update": "node copy.js tsconfig.base.json tsconfig.json",
-    "_jasmine-update": "node copy.js jasmine.json jasmine.json",
-    "_jasmine-debug-update": "node copy.js jasmine-debug.json jasmine-debug.json",
-    "_tslint-update": "node copy.js tslint.base.json tslint.json",
-    "_license-update": "node copy.js LICENSE LICENSE",
-    "_tsconfig-spec-update": "node copy.js tsconfig-spec.base.json tsconfig-spec.json"
+    "update-dependency": "npm-run-all --serial _update-peer-dependency _package-update",
+    "_license-update": "node -r esm update-license.js",
+    "_jasmine-update": "node -r esm update-jasmine.js",
+    "_jasmine-debug-update": "node -r esm update-jasmine-debug.js",
+    "_tslint-update": "node -r esm update-tslint.js",
+    "_tsconfig-spec-update": "node -r esm update-tsconfig-spec.js",
+    "_tsconfig-update": "node -r esm update-tsconfig.js",
+    "_package-update": "node -r esm update-package.js",
+    "_update-peer-dependency": " node -r esm update-peer-dependency.js"
   },
   "devDependencies": {
+    "@alirya/monorepo": "^0.1.0",
     "deepmerge": "^4.2.2",
     "lerna": "^3.22.1",
     "tslint": "^5.13.0",
@@ -49,7 +50,8 @@
     "glob": "^7.2.0",
     "npm-run-all": "^4.1.5",
     "jasmine": "=3.10.0",
-    "jasmine-ts-console-reporter": "^3.1.1"
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "esm": "^3.2.25"
   },
   "license": "Apache-2.0"
 }
