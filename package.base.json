@@ -19,7 +19,8 @@
     "tsc-fancy": "^1.1.2",
     "ts-toolbelt": "^9.6.0",
     "utility-types": "^3.10.0",
-    "package-version-git-tag": "^3.0.0"
+    "package-version-git-tag": "^3.0.0",
+    "cpx": "^1.5.0"
   },
   "scripts": {
     "spec-run-js": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json",
