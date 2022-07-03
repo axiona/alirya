@@ -8,7 +8,7 @@
     "bootstrap-scope": "lerna bootstrap --scope @alirya/iterable",
     "installs": "lerna exec  -- npm install",
     "link": "lerna link",
-    "spec-run": "lerna exec -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
+    "spec-run": "lerna run spec-run --stream --no-bail",
     "spec-run-debug": "lerna exec -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine-debug.json --reporter=jasmine-ts-console-reporter",
     "spec-run-debug-scope": "lerna exec --scope @alirya/uri -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine-debug.json --reporter=jasmine-ts-console-reporter",
     "spec-run-debug-scope-file": "lerna exec --scope @alirya/koa -- node -r esm ../../node_modules/jasmine/bin/jasmine.js --config=./jasmine-debug.json --reporter=jasmine-ts-console-reporter dist-spec/middleware/error-handler/debug/server.spec.js",
