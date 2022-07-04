@@ -88,3 +88,6 @@
 [submodule "packages/filesystem"]
 	path = packages/filesystem
 	url = https://github.com/alirya/filesystem
+[submodule "packages/promise"]
+	path = packages/promise
+	url = https://github.com/alirya/promise
