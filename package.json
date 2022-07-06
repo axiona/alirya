@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "bootlink": "npm-run-all --serial bootstrap link",
-    "config-update": "npm-run-all --serial _package-update _tsconfig-update _tslint-update _tsconfig-spec-update _license-update _jasmine-update _jasmine-debug-update",
+    "config-update": "npm-run-all --serial _package-update _tsconfig-update _eslint-update _tsconfig-spec-update _license-update _jasmine-update _jasmine-debug-update",
     "print-versions": "node all-version.js",
     "bootstrap": "lerna bootstrap",
     "bootstrap-scope": "lerna bootstrap --scope @alirya/iterable",
@@ -36,6 +36,7 @@
     "_jasmine-update": "node -r esm update-jasmine.js",
     "_jasmine-debug-update": "node -r esm update-jasmine-debug.js",
     "_tslint-update": "node -r esm update-tslint.js",
+    "_eslint-update": "node -r esm update-eslint.js",
     "_tsconfig-spec-update": "node -r esm update-tsconfig-spec.js",
     "_tsconfig-update": "node -r esm update-tsconfig.js",
     "_package-update": "node -r esm update-package.js",
@@ -44,7 +45,7 @@
   "devDependencies": {
     "@alirya/monorepo": "^0.2.0",
     "deepmerge": "^4.2.2",
-    "lerna": "^3.22.1",
+    "lerna": "^5.1.7",
     "tslint": "^5.13.0",
     "typescript": "^4.4.4",
     "glob": "^7.2.0",

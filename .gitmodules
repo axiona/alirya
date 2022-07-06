@@ -91,3 +91,6 @@
 [submodule "packages/promise"]
 	path = packages/promise
 	url = https://github.com/alirya/promise
+[submodule "packages/prompt"]
+	path = packages/prompt
+	url = https://github.com/alirya/prompt
