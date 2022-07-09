@@ -94,3 +94,6 @@
 [submodule "packages/http-server"]
 	path = packages/http-server
 	url = https://github.com/alirya/http-server
+[submodule "packages/prompt"]
+	path = packages/prompt
+	url = https://github.com/alirya/prompt
