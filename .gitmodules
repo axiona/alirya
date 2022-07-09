@@ -91,3 +91,6 @@
 [submodule "packages/promise"]
 	path = packages/promise
 	url = https://github.com/alirya/promise
+[submodule "packages/http-server"]
+	path = packages/http-server
+	url = https://github.com/alirya/http-server
