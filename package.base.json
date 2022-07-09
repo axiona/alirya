@@ -23,6 +23,7 @@
     "cpx2": "^4.2.0"
   },
   "scripts": {
+    "installs": "npm i",
     "spec-run-js": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json",
     "spec-run": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
     "spec-run-debug": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine-debug.json --reporter=jasmine-ts-console-reporter",
