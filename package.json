@@ -16,7 +16,7 @@
   "scripts": {
     "bootlink": "npm-run-all --serial bootstrap link",
     "config-update": "npm-run-all --serial _package-update _tsconfig-update _tslint-update _tsconfig-spec-update _license-update _jasmine-update _jasmine-debug-update",
-    "print-versions": "node all-version.js",
+    "print-versions": "node -r esm version.js",
     "bootstrap": "lerna bootstrap",
     "bootstrap-scope": "lerna bootstrap --scope @alirya/iterable",
     "installs": "lerna exec  -- npm install",
