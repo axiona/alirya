@@ -1,7 +1,7 @@
 {
   "license": "Apache-2.0",
   "devDependencies": {
-    "@axiona/monorepo": "^0.3.2",
+    "@axiona/monorepo": "^0.4.0",
     "deepmerge": "^4.2.2",
     "lerna": "^6.4.1",
     "tslint": "^5.13.0",
