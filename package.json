@@ -52,7 +52,8 @@
     "_fix-import-extension": "node -r esm fix-import-path.js",
     "_tsconfig-spec-update": "node -r esm update-tsconfig-spec.js",
     "_tsconfig-update": "node -r esm update-tsconfig.js",
-    "_package-update": "node -r esm update-package.js",
-    "_update-peer-dependency": " node -r esm update-peer-dependency.js"
-  }
+    "_package-update": "node update-package.js",
+    "_update-peer-dependency": " node update-peer-dependency.js"
+  },
+  "type": "module"
 }
