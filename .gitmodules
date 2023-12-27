@@ -28,9 +28,6 @@
 [submodule "packages/iterable"]
 	path = packages/iterable
 	url = https://github.com/axiona/iterable.git
-[submodule "packages/koa"]
-	path = packages/koa
-	url = https://github.com/axiona/koa.git
 [submodule "packages/map"]
 	path = packages/map
 	url = https://github.com/axiona/map.git
@@ -94,9 +91,6 @@
 [submodule "packages/http-server"]
 	path = packages/http-server
 	url = https://github.com/axiona/http-server
-[submodule "packages/prompt"]
-	path = packages/prompt
-	url = https://github.com/axiona/prompt
 [submodule "packages/key-value-storage"]
 	path = packages/key-value-storage
 	url = https://github.com/axiona/key-value-storage
