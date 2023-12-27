@@ -70,9 +70,6 @@
 [submodule "packages/proxy"]
 	path = packages/proxy
 	url = https://github.com/axiona/proxy
-[submodule "packages/event"]
-	path = packages/event
-	url = https://github.com/axiona/event
 [submodule "packages/typeorm"]
 	path = packages/typeorm
 	url = https://github.com/axiona/typeorm
