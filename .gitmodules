@@ -97,3 +97,6 @@
 [submodule "packages/file-storage"]
 	path = packages/file-storage
 	url = https://github.com/axiona/file-storage
+[submodule "packages/prompt"]
+	path = packages/prompt
+	url = https://github.com/axiona/prompt
