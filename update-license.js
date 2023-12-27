@@ -29,10 +29,10 @@
 //
 //
 //
-import Copy from "@alirya/monorepo/copy";
-import Dirs from "@alirya/monorepo/dir/array/dirs";
-import JsonRead from "@alirya/monorepo/json-read";
-import Files from "@alirya/monorepo/file/array/files";
+import Copy from "@axiona/monorepo/copy";
+import Dirs from "@axiona/monorepo/dir/array/dirs";
+import JsonRead from "@axiona/monorepo/json-read";
+import Files from "@axiona/monorepo/file/array/files";
 
 const file = '/LICENSE';
 

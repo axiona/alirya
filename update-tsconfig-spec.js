@@ -1,10 +1,10 @@
-import Dirs from '@alirya/monorepo/dir/array/dirs';
-import UpdateGlobalDependencies from '@alirya/monorepo/update-global-dependencies';
-import Files from '@alirya/monorepo/json/array/files';
-import JsonRead from '@alirya/monorepo/json-read';
-import MergeRight from '@alirya/monorepo/merge-right';
-import MergeLeft from '@alirya/monorepo/merge-left';
-import Write from '@alirya/monorepo/json/write';
+import Dirs from '@axiona/monorepo/dir/array/dirs';
+import UpdateGlobalDependencies from '@axiona/monorepo/update-global-dependencies';
+import Files from '@axiona/monorepo/json/array/files';
+import JsonRead from '@axiona/monorepo/json-read';
+import MergeRight from '@axiona/monorepo/merge-right';
+import MergeLeft from '@axiona/monorepo/merge-left';
+import Write from '@axiona/monorepo/json/write';
 
 const base = JsonRead(__dirname + '/tsconfig-spec.base.json');
 

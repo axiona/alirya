@@ -1,9 +1,9 @@
-import UpdatePeerDependencies from '@alirya/monorepo/update-peer-dependencies';
-import Dirs from '@alirya/monorepo/dir/array/dirs';
-import Files from '@alirya/monorepo/file/array/files';
-import Write from '@alirya/monorepo/json/write';
-import JsonRead from '@alirya/monorepo/json-read';
-import PackageJson from '@alirya/monorepo/dir/package-json';
+import UpdatePeerDependencies from '@axiona/monorepo/update-peer-dependencies';
+import Dirs from '@axiona/monorepo/dir/array/dirs';
+import Files from '@axiona/monorepo/file/array/files';
+import Write from '@axiona/monorepo/json/write';
+import JsonRead from '@axiona/monorepo/json-read';
+import PackageJson from '@axiona/monorepo/dir/package-json';
 
 const dir = PackageJson(__dirname);
 
